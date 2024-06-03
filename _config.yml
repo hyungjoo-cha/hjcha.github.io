@@ -8,8 +8,13 @@ permalink:        pretty
 
 # Setup
 title:            'Hyungjoo Cha'
+<<<<<<< HEAD
 tagline:          'Hyungjoo Cha'
 description:      '-'
+=======
+tagline:          '-'
+description:      '--'
+>>>>>>> 07d790963344fff1aa352e6b9ea78afca96c6461
 url:              "https://hjcha.github.io"
 baseurl:          ""
 
