@@ -16,7 +16,7 @@ There are currently two themes built on Poole:
 
 Learn more and contribute on [GitHub](https://github.com/poole). -->
 
-Hello, I am Hyungjoo Cha, a Ph.D. Candidate at [SaVAnNa Lab](https://savanna.korea.ac.kr), Korea University. 
+Hello, I am Hyungjoo Cha, a Ph.D. Candidate at [SaVAnNa Lab](https://savanna.korea.ac.kr), Korea University.  
 
 ## <a id="Educations"/>Educations
 
