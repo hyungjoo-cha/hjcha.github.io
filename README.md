@@ -1,35 +1,118 @@
-<p align = 'center'>
-   <img src="https://koptimizer.github.io/IDALab.io/assets/img/IDAL_gray_1.png" width="500" height="500"><br>
-   <b> http://idalab.ac.kr/ </b>
-</p>
+# Hyde
 
-### IDAL 홈페이지 관리 핵심파일
-- ```_config.yml```을 통해서 홈페이지 Title과 description, 메인 화면 텍스트를 변경할 수 있습니다.
-- ```_includes/*.html``` 및 ```_layouts/default.html```  파일을 통해서 홈페이지 내부의 모든 내용을 변경할 수 있습니다.
-- ```assets/css/main.css```를 통해서 요소들의 속성을 수정하고 정의해줄 수 있습니다.
-- 모든 이미지는 ```assets/img/...```에 저장해서 사용해주세요.
+Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
-### 온라인에서 작업하는 방법
-- Github을 이용해서 해당 파일을 직접 수정하면 자동으로 commit 되어서 바로 적용됩니다.
-- 실제 웹으로 적용되기까지 1~30분 가량의 시간이 걸리나 수정이 간편해서 간소한 수정에 용이합니다.
+![Hyde screenshot](https://f.cloud.github.com/assets/98681/1831228/42af6c6a-7384-11e3-98fb-e0b923ee0468.png)
 
-### 로컬PC에서 작업하는 방법
-- 만약 첫 작업인 경우:
-   - [해당 링크](https://rubyinstaller.org/downloads/)에서 Ruby+DevKit 2.x.x 버젼을 다운받습니다.
-   - ruby를 설치하고, ruby prompt를 켭니다.
-   - ```gem install jekyll bundler```을 실행하여 jekyll과 필요한 gem 파일을 설치합니다.
-   - 만약 당신이 ruby 3.0을 다운받았다면...?
-     - ```bundle install``` ->> ```bundle add webrick```을 하여 세팅합니다.
-- ```$ git clone``` 혹은 ```$ git pull```을 통해 해당 레포지토리를 로컬 pc의 적절한 디렉토리로 끌어옵니다.
-- Ruby prompt를 켜고 로컬 레포지토리로 이동한 후, ```jekyll serve```를 입력합니다.
-- serve를 실행하면 localhost:4000에서 자신이 작업하는 홈페이지의 모습을 바로 확인할 수 있습니다.
-- 모든 작업이 완료되었다면 ```commit -> push (-> pull reqeust)```을 해서 원격 레포지토리에 업로드하시면 됩니다.
-- 실제 웹으로 적용되기 까지 1~30분 가량의 시간이 소요됩니다.
 
-### 주의점
-- 중요한 정보는 홈페이지에 연동 및 업로드 하지 말아주세요. (보안이 취약합니다.)
-- 사진들 사이즈는 하드코딩 되어있습니다. 속성으로 조정하지 마시고 업로드 시 아래의 제약에 맞추는게 훨씬 편합니다.
-  - About에 들어가는 사진 3개 : 600 * 400
-  - 교수님 사진 : 340*453
-  - 학생 사진 : 204*272
-  - 활동 사진 : 400*400
+## Contents
+
+- [Usage](#usage)
+- [Options](#options)
+  - [Sidebar menu](#sidebar-menu)
+  - [Sticky sidebar content](#sticky-sidebar-content)
+  - [Themes](#themes)
+  - [Reverse layout](#reverse-layout)
+- [Development](#development)
+- [Author](#author)
+- [License](#license)
+
+
+## Usage
+
+Hyde is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
+
+
+## Options
+
+Hyde includes some customizable options, typically applied via classes on the `<body>` element.
+
+
+### Sidebar menu
+
+Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
+
+```
+---
+layout: page
+title: About
+---
+```
+
+**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
+
+
+### Sticky sidebar content
+
+By default Hyde ships with a sidebar that affixes it's content to the bottom of the sidebar. You can optionally disable this by removing the `.sidebar-sticky` class from the sidebar's `.container`. Sidebar content will then normally flow from top to bottom.
+
+```html
+<!-- Default sidebar -->
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    ...
+  </div>
+</div>
+
+<!-- Modified sidebar -->
+<div class="sidebar">
+  <div class="container">
+    ...
+  </div>
+</div>
+```
+
+
+### Themes
+
+Hyde ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
+
+![Hyde in red](https://f.cloud.github.com/assets/98681/1831229/42b0b354-7384-11e3-8462-31b8df193fe5.png)
+
+There are eight themes available at this time.
+
+![Hyde theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
+
+To use a theme, add anyone of the available theme classes to the `<body>` element in the `default.html` layout, like so:
+
+```html
+<body class="theme-base-08">
+  ...
+</body>
+```
+
+To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/hyde/blob/master/public/css/hyde.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
+
+### Reverse layout
+
+![Hyde with reverse layout](https://f.cloud.github.com/assets/98681/1831230/42b0d3ac-7384-11e3-8d54-2065afd03f9e.png)
+
+Hyde's page orientation can be reversed with a single class.
+
+```html
+<body class="layout-reverse">
+  ...
+</body>
+```
+
+
+## Development
+
+Hyde has two branches, but only one is used for active development.
+
+- `master` for development.  **All pull requests should be submitted against `master`.**
+- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
+
+
+## Author
+
+**Mark Otto**
+- <https://github.com/mdo>
+- <https://twitter.com/mdo>
+
+
+## License
+
+Open sourced under the [MIT license](LICENSE.md).
+
+<3
