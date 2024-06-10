@@ -35,9 +35,9 @@ Have questions or suggestions? Feel free to [open an issue on GitHub](https://gi
 
 Thanks for reading! -->
 
-* (2020.09 ~ Current) Integrated M.S./Ph.D. Course, Industrial Management Engineering \
-  <span style="color:gray">*Korea University*</span>
-* (2014.03.~ 2020.08) BSc, Industrial and Management Engineering, International Finance (Double major) \
+* (2020.09 ~ Current) Integrated M.S./Ph.D. Candidate, Industrial Management Engineering (GPA 4.35 / 4.5)\
+  <span style="color:gray">*Korea University*</span> 
+* (2014.03.~ 2020.08) BSc, Industrial and Management Engineering, International Finance (Double major)  (GPA 4.16 / 4.5\
   <span style="color:gray">*Hankuk University of Foreign Studies*</span>
 
 
@@ -46,7 +46,7 @@ Thanks for reading! -->
 
 My research interest includes various optimization problems in industrial fields. Mainly, I focus on modelling the real-world issues that can be optimized with mathematical models. To find out my recent up-do-date works, please visit my [Google Scholar](https://scholar.google.com/citations?user=ke2-Wb8AAAAJ&hl=ko&oi=ao).
 
-*&dagger; indicates corresponding author*
+*&dagger; indicates a corresponding author*
 
 * __Hyungjoo Cha__, Chanho Lee, Chi Xie, Qing-Chang Lu, Joonyup Eun&dagger;, Taesu Cheong&dagger;, [An Exact A ∗ -Based Tree Search Algorithm for TSP With Sequence-and-Load Dependent Risk](https://ieeexplore.ieee.org/abstract/document/10502342), *IEEE Transactions on Intelligent Transportation Systems (Early Access), (2024+)*
 * Chong-Keun Kim, Chanho Lee, DongKyun Kim, __Hyungjoo Cha__&dagger;, Taesu Cheong&dagger;, [Enhancing Supply Chain Efficiency: A Two-Stage Model for Evaluating Multiple Sourcing and Extra Procurement Strategy Optimization](https://www.mdpi.com/2071-1050/15/22/16122), *Sustainability, (2023)*
